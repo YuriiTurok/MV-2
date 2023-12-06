@@ -28,8 +28,8 @@ ul, ol{
 }
 
 .container{
-  max-width: 1210px;
-  padding: 0 15px;
+  max-width: 1212px;
+  padding: 0 16px;
   margin: 0 auto;
 }
 
@@ -46,6 +46,16 @@ ul, ol{
 .cuberium{
   background: #0F1115;
   padding: 229px 0 128px;
+}
+
+.cuberium__title{
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44.8px;
+  text-align: center;
+  margin-bottom: 133px;
+  display: none;
 }
 
 .cuberium__content-inner{
@@ -81,6 +91,13 @@ ul, ol{
   font-size: 14px;
   line-height: 21px;
   margin-top: 8px;
+}
+
+.border{
+  height: 1px;
+  background: #20252C;
+  margin-top: 64px;
+  display: none;
 }
 
 /* ------------------------------ */
@@ -126,15 +143,20 @@ ul, ol{
   font-size: 16px;
   font-weight: 600;
   line-height: 20.8px;
-  padding: 13.5px 64px;
+  padding: 13.5px 16px;
   background: linear-gradient(99deg, #952EE5 10.42%, #302DDD 109.22%);
   border-radius: 100px;
   width: 196px;
+  text-align: center;
   cursor: pointer;
 }
 
+.possibility__content-btn:hover{
+  background: linear-gradient(99deg, #302DDD 10.42%, #952EE5 109.22%);
+}
+
 .possibility__content-img{
-  height: 400px;
+  display: flex;
   border-radius: 24px;
 }
 
@@ -154,7 +176,7 @@ ul, ol{
   .cuberium__content-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 120px 32px;
+    gap: 121px 32px;
   }
 
   .cuberium__content-item {
@@ -165,51 +187,75 @@ ul, ol{
 
   .cuberium__content-img {
     left: unset;
-    bottom: 130px;
+    bottom: 131px;
+  }
+
+  .cuberium__content-title{
+    align-self: stretch;
   }
 
   .possibility__inner-top {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+  }
+
+  .possibility__content{
+    padding: 32px 32px 72px;
+    max-width: 704px;
   }
 
   .possibility__inner-bottom{
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 40px;
   }
 
-  .possibility__content-img{
-    height: unset;
-  }
 }
 
 
 @media (max-width: 885px) {
+  .border{
+    display: block;
+  }
+
+  .cuberium__title{
+    display: block;
+  }
+
+  .cuberium{
+    padding: 64px 0 0 0;
+  }
+
   .cuberium__content-img{
     margin-bottom: 20px;
+  }
+
+  .possibility{
+    padding: 64px 0 0 0;
   }
 }
 
 
 @media (max-width: 655px) {
-  .cuberium{
-    padding: 180px 0 90px;
-  }
-
   .cuberium__content-inner {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 120px 32px;
+    gap: 133px 32px;
+  }
+
+  .cuberium__content-item{
+    padding: 64px 20px 20px;
   }
 
   .cuberium__content-img{
+    bottom: 119px;
     margin-bottom: 0;
   }
 
-  .possibility{
-    padding: 90px 0;
+  .possibility__content{
+    padding: 20px;
   }
+
 }
 
 
