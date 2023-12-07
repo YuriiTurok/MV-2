@@ -41,6 +41,28 @@ ul, ol{
   text-align: center;
 }
 
+.btn__see-more{
+  width: 200px;
+  padding: 12px 16px;
+  background: #231E41;
+  border: 1px solid #7553F0;
+  border-radius: 100px;
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background .3s ease;
+}
+
+.btn__see-more:hover{
+  background: #7553F0;
+  border-color: #7553F0;
+}
+
+
 /* ------------------------------ */
 
 .cuberium{
@@ -155,7 +177,58 @@ ul, ol{
 
 /* ---------------------------- */
 
+.featured{
+  background-color: #0F1115;
+  padding: 128px 0;
+}
 
+.featured__inner{
+  margin-top: 48px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured__item{
+  width: 372px;
+  padding: 32px;
+  border: 1px solid #7553F0;
+  border-radius: 32px;
+  background: rgba(117, 83, 240, 0.10);
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+.featured__item.active {
+  color: #F9FAFC;
+}
+
+.featured__item-top{
+  width: 235px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.featured__item-img{
+  width: 100%;
+  height: 100%;
+}
+
+.featured__item-text{
+  margin-top: 20px;
+}
+
+.featured__btn{
+  margin-top: 48px;
+  display: none;
+}
+
+/* ------------------------------- */
 
 
 
@@ -228,13 +301,20 @@ ul, ol{
     border-bottom: 1px solid #20252C;
     padding-bottom: 64px;
   }
+
+  .featured{
+    padding: 64px 0;
+  }
 }
 
 
 @media (max-width: 655px) {
-  .cuberium__title{
+  .title{
     font-size: 32px;
-    line-height: 44.8px;
+    line-height: 44.8px ;
+  }
+
+  .cuberium__title{
     margin-bottom: 133px;
   }
 
@@ -263,5 +343,16 @@ ul, ol{
     line-height: 44.8px;
   }
 
+  .featured__inner{
+    gap: 16px;
+  }
+
+  .featured__item-last{
+    display: none;
+  }
+
+  .featured__btn{
+    display: block;
+  }
 }
 
