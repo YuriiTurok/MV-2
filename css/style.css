@@ -45,17 +45,11 @@ ul, ol{
 
 .cuberium{
   background: #0F1115;
-  padding: 229px 0 128px;
+  padding: 128px 0;
 }
 
 .cuberium__title{
-  color: #FFF;
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 44.8px;
-  text-align: center;
-  margin-bottom: 133px;
-  display: none;
+  margin-bottom: 170px;
 }
 
 .cuberium__content-inner{
@@ -91,13 +85,6 @@ ul, ol{
   font-size: 14px;
   line-height: 21px;
   margin-top: 8px;
-}
-
-.border{
-  height: 1px;
-  background: #20252C;
-  margin-top: 64px;
-  display: none;
 }
 
 /* ------------------------------ */
@@ -166,6 +153,8 @@ ul, ol{
   height: auto;
 }
 
+/* ---------------------------- */
+
 
 
 
@@ -213,30 +202,42 @@ ul, ol{
 }
 
 
-@media (max-width: 885px) {
-  .border{
-    display: block;
-  }
-
-  .cuberium__title{
-    display: block;
-  }
-
+@media (max-width: 888px) {
   .cuberium{
     padding: 64px 0 0 0;
   }
 
+  .cuberium__content-inner{
+    border-bottom: 1px solid #20252C;
+    padding-bottom: 64px;
+  }
+
+  .cuberium__content-item{
+    height: 210px;
+  }
+
   .cuberium__content-img{
-    margin-bottom: 20px;
+    bottom: 160px;
   }
 
   .possibility{
     padding: 64px 0 0 0;
   }
+
+  .possibility__inner{
+    border-bottom: 1px solid #20252C;
+    padding-bottom: 64px;
+  }
 }
 
 
 @media (max-width: 655px) {
+  .cuberium__title{
+    font-size: 32px;
+    line-height: 44.8px;
+    margin-bottom: 133px;
+  }
+
   .cuberium__content-inner {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -245,10 +246,11 @@ ul, ol{
 
   .cuberium__content-item{
     padding: 64px 20px 20px;
+    height: 210px;
   }
 
   .cuberium__content-img{
-    bottom: 119px;
+    bottom: 160px;
     margin-bottom: 0;
   }
 
@@ -256,15 +258,10 @@ ul, ol{
     padding: 20px;
   }
 
-}
-
-
-@media (max-width: 450px) {
-  .cuberium__content-img{
-    margin-bottom: 20px;
+  .possibility__content-title{
+    font-size: 32px;
+    line-height: 44.8px;
   }
 
-  .possibility__content{
-    padding: 22px;
-  }
 }
+
