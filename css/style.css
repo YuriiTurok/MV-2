@@ -8,7 +8,6 @@ body{
   font-weight: 400;
   line-height: 24px;
   color: #B0BBCB;
-  overflow-x: hidden;
 }
 
 html,
@@ -63,10 +62,20 @@ ul, ol{
   border-color: #7553F0;
 }
 
+.menu__mobile-opened{
+  overflow: hidden;
+  padding-right: 17px;
+}
+
 /* ----------------------------- */
 .header{
   background: #0E1030;
   padding: 24px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .header__inner{
@@ -175,6 +184,7 @@ ul, ol{
 .cuberium{
   background: #0F1115;
   padding: 128px 0;
+  margin-top: 94px;
 }
 
 .cuberium__title{
@@ -449,7 +459,7 @@ ul, ol{
   }
 
   .header__menu-list{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -474,6 +484,7 @@ ul, ol{
 
   .cuberium{
     padding: 64px 0 0 0;
+    margin-top: 72px;
   }
 
   .cuberium__content-inner{
