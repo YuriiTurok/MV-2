@@ -9,9 +9,9 @@ burgerBtn.addEventListener('click', function() {
     body.classList.remove('menu__mobile-opened');
   }
   else {
+    body.classList.add('menu__mobile-opened')
     burgerBtn.classList.add('active');
     menuList.classList.add('active');
-    body.classList.add('menu__mobile-opened')
   }
 });
 

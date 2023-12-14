@@ -64,7 +64,6 @@ ul, ol{
 
 .menu__mobile-opened{
   overflow: hidden;
-  padding-right: 17px;
 }
 
 /* ----------------------------- */
@@ -569,12 +568,24 @@ ul, ol{
     gap: 16px;
   }
 
-  .featured__item-last{
-    display: none;
-  }
+  .featured__item {
+    width: unset;
+    padding: unset;
+    border: none;
+    border-radius: none;
+    background: none;
+    backdrop-filter: none;
+    text-align: center;
+ }
 
-  .featured__btn{
-    display: block;
-  }
+ .featured__item-top {
+  width: 162px;
+  height: 44px;
+ 
+}
+
+ .featured__item-text{
+  display: none;
+ }
 }
 
