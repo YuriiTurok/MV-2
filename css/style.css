@@ -242,6 +242,107 @@ ul, ol{
 
 /* ------------------------------ */
 
+.demo{
+  padding: 128px 0;
+  background: #0F1115;
+}
+
+.demo__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.demo__title{
+  text-align: left;
+}
+
+.demo__slider-arrows{
+  display: flex;
+  gap: 16px;
+}
+
+.demo__slider-btn{
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 32px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.demo__slider-container{
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.demo__slider-line{
+  display: flex;
+  transition: .3s;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.slider__item{
+  background-repeat: no-repeat;
+  min-width: 574px;
+  height: 311px;
+  padding: 32px;
+  border-radius: 24px;
+}
+
+.slider__item-1{
+  background-image: url("../assets/slider-item-2.svg");
+}
+
+.slider__item-2{
+  background-image: url("../assets/slider-item-1.svg");
+}
+
+.slider__item-3{
+  background-image: url("../assets/slider-item-2.svg");
+}
+
+.slider__item-4{
+  background-image: url("../assets/slider-item-1.svg");
+}
+
+.slider__item-5{
+  background-image: url("../assets/slider-item-2.svg");
+}
+
+.slider__item-6{
+  background-image: url("../assets/slider-item-1.svg");
+}
+
+.slider__item-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__item-title{
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44.8px;
+  margin-top: 202px;
+}
+
+.slider__btn-jump{
+  width: 196px;
+  padding: 13.5px 16px;
+  height: 48px;
+  margin-top: 199px;
+}
+
+/* ------------------------------ */
+
 .possibility{
   background: #0F1115;
   padding: 128px 0;
@@ -682,8 +783,14 @@ ul, ol{
   }
 
   .possibility__content-title{
-    font-size: 32px;
-    line-height: 44.8px;
+    font-size: 24px;
+    line-height: 33.6px;
+  }
+
+  .possibility__content-text{
+    font-size: 14px;
+    line-height: 21px;
+    margin: 12px 0;
   }
 
   .collaborations__title{
